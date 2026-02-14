@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- reference：https://blog.csdn.net/Sea_in_Night/article/details/135216291 -->
+<Defs>
+  <!-- tier1 -->
+  <TraitDef>
+    <defName>RagnaroksTraitsTier1</defName>
+    <label>`RagnaroksTraitsTier1Label`</label>
+    <description>`RagnaroksTraitsTier1Description`</description>
+    <commonality>0.00</commonality>
+    <conflictingTraits>
+      <li>RagnaroksTraitsTier2</li>
+      <li>RagnaroksTraitsTier3</li>
+    </conflictingTraits>
+    <degreeDatas>
+      <li>
+        <label>`RagnaroksTraitsTier1Label`</label>
+        <description>`RagnaroksTraitsTier1Description`</description>
+        <socialFightChanceFactor>0.25</socialFightChanceFactor>
+        <statOffsets>
+          <PawnBeauty>1</PawnBeauty>
+        </statOffsets>
+        <statFactors>
+          <AimingDelayFactor>0.5</AimingDelayFactor>
+          <IncomingDamageFactor>0.5</IncomingDamageFactor>
+          <MeleeArmorPenetration>0.5</MeleeArmorPenetration>
+          <MeleeCooldownFactor>0.5</MeleeCooldownFactor>
+          <MeleeDamageFactor>2.0</MeleeDamageFactor>
+          <MeleeDodgeChance>6.5</MeleeDodgeChance>
+          <MeleeDPS>2.0</MeleeDPS>
+          <MeleeHitChance>2.0</MeleeHitChance>
+          <MortarMissRadiusFactor>0.5</MortarMissRadiusFactor>
+          <PawnTrapSpringChance>0.5</PawnTrapSpringChance>
+          <RangedCooldownFactor>0.5</RangedCooldownFactor>
+          <!-- <ShootingAccuracyFactor_Touch>1.0</ShootingAccuracyFactor_Touch>
+          <ShootingAccuracyFactor_Short>1.0</ShootingAccuracyFactor_Short>
+          <ShootingAccuracyFactor_Medium>1.0</ShootingAccuracyFactor_Medium>
+          <ShootingAccuracyFactor_Long>1.0</ShootingAccuracyFactor_Long> -->
+          <ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
+          <StaggerDurationFactor>0.5</StaggerDurationFactor>
+          <MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">2.0</MeleeDoorDamageFactor>
+          <!-- <ShootingAccuracyChildFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</ShootingAccuracyChildFactor> -->
+          <AnimalsLearningFactor>1.25</AnimalsLearningFactor>
+          <!-- 在床上时饥饿速度，这里当作 debuff，能力强饿得快没毛病 -->
+          <BedHungerRateFactor>1.25</BedHungerRateFactor>
+          <CaravanRidingSpeedFactor>2.0</CaravanRidingSpeedFactor>
+          <CarryingCapacity>4.0</CarryingCapacity>
+          <ComfyTemperatureMax>2.0</ComfyTemperatureMax>
+          <ComfyTemperatureMin>-2.0</ComfyTemperatureMin>
+          <CrawlSpeed>4.0</CrawlSpeed>
+          <EatingSpeed>1.25</EatingSpeed>
+          <FilthRate>0.5</FilthRate>
+          <FlightCooldown>0.5</FlightCooldown>
+          <MaxFlightTime>2.0</MaxFlightTime>
+          <ForagedNutritionPerDay>1.0</ForagedNutritionPerDay>
+          <GlobalLearningFactor>1.25</GlobalLearningFactor>
+          <ImmunityGainSpeed>2.0</ImmunityGainSpeed>
+          <InjuryHealingFactor>2.0</InjuryHealingFactor>
+          <JoyFallRateFactor>0.5</JoyFallRateFactor>
+          <!-- <LeatherAmount>1.0</LeatherAmount> -->
+          <LifespanFactor>1.25</LifespanFactor>
+          <!-- 营养需求，增加一点作为 debuff，能力强吃得多没毛病 -->
+          <MaxNutrition>1.25</MaxNutrition>
+          <!-- <MeatAmount>1.0</MeatAmount> -->
+          <MeditationFocusGain>2.0</MeditationFocusGain>
+          <MentalBreakThreshold>0.5</MentalBreakThreshold>
+          <!-- <MinimumHandlingSkill>1.0</MinimumHandlingSkill> -->
+          <MoveSpeed>4.0</MoveSpeed>
+          <PainShockThreshold>2.0</PainShockThreshold>
+          <PsychicEntropyMax>2.0</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate>2.0</PsychicEntropyRecoveryRate>
+          <!-- <PsychicSensitivity>1.0</PsychicSensitivity> -->
+          <RestFallRateFactor>0.5</RestFallRateFactor>
+          <RestRateMultiplier>1.25</RestRateMultiplier>
+          <ToxicEnvironmentResistance>2.0</ToxicEnvironmentResistance>
+          <ToxicResistance>2.0</ToxicResistance>
+          <!-- <Wildness>1.0</Wildness> -->
+          <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.5</PsychicEntropyGain>
+          <!-- <Terror MayRequire="Ludeon.RimWorld.Ideology">1.0</Terror> -->
+          <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">0.5</BandwidthCost>
+          <CancerRate MayRequire="Ludeon.RimWorld.Biotech">0.5</CancerRate>
+          <ControlTakingTime MayRequire="Ludeon.RimWorld.Biotech">0.5</ControlTakingTime>
+          <EMPResistance MayRequire="Ludeon.RimWorld.Biotech">2.0</EMPResistance>
+          <!-- <Fertility MayRequire="Ludeon.RimWorld.Biotech">1.0</Fertility> -->
+          <GrowthVatOccupantSpeed MayRequire="Ludeon.RimWorld.Biotech">2.0</GrowthVatOccupantSpeed>
+          <!-- <HemogenGainFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</HemogenGainFactor> -->
+          <LearningRateFactor MayRequire="Ludeon.RimWorld.Biotech">2.0</LearningRateFactor>
+          <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">2.0</MechBandwidth>
+          <!-- <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">1.0</MechControlGroups> -->
+          <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.5</MechEnergyLossPerHP>
+          <MechEnergyUsageFactor MayRequire="Ludeon.RimWorld.Biotech">0.5</MechEnergyUsageFactor>
+          <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">2.0</MechFormingSpeed>
+          <MechRemoteRepairDistance MayRequire="Ludeon.RimWorld.Biotech">2.0</MechRemoteRepairDistance>
+          <MechRemoteShieldDistance MayRequire="Ludeon.RimWorld.Biotech">2.0</MechRemoteShieldDistance>
+          <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">2.0</MechRemoteShieldEnergy>
+          <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">2.0</MechRepairSpeed>
+          <!-- <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</RawNutritionFactor> -->
+          <RestFallRateFactor MayRequire="Ludeon.RimWorld.Biotech">0.5</RestFallRateFactor>
+          <SubcoreEncodingSpeed MayRequire="Ludeon.RimWorld.Biotech">2.0</SubcoreEncodingSpeed>
+          <!-- <WastepacksPerRecharge MayRequire="Ludeon.RimWorld.Biotech">1.0</WastepacksPerRecharge> -->
+          <FishingSpeed MayRequire="Ludeon.RimWorld.Odyssey">2.0</FishingSpeed>
+          <!-- <FishingYield MayRequire="Ludeon.RimWorld.Odyssey">1.0</FishingYield> -->
+          <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">2.0</PilotingAbility>
+          <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">2.0</VacuumResistance>
+          <ArrestSuccessChance>1.25</ArrestSuccessChance>
+          <!-- <BondAnimalChanceFactor>1.0</BondAnimalChanceFactor> -->
+          <!-- <DrugSellPriceImprovement>1.0</DrugSellPriceImprovement> -->
+          <NegotiationAbility>1.25</NegotiationAbility>
+          <SocialImpact>1.25</SocialImpact>
+          <TameAnimalChance>2.0</TameAnimalChance>
+          <TradePriceImprovement>1.25</TradePriceImprovement>
+          <TrainAnimalChance>1.25</TrainAnimalChance>
+          <!-- <AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">1.0</AnimalProductsSellImprovement> -->
+          <!-- <SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">1.0</SlaveSuppressionFallRate> -->
+          <AnimalGatherSpeed>2.0</AnimalGatherSpeed>
+          <!-- <AnimalGatherYield>1.0</AnimalGatherYield> -->
+          <CleaningSpeed>2.0</CleaningSpeed>
+          <ConstructionSpeed>2.0</ConstructionSpeed>
+          <ConstructSuccessChance>1.25</ConstructSuccessChance>
+          <DeepDrillingSpeed>2.0</DeepDrillingSpeed>
+          <!-- <DrugHarvestYield>1.0</DrugHarvestYield> -->
+          <FixBrokenDownBuildingSuccessChance>1.25</FixBrokenDownBuildingSuccessChance>
+          <HackingSpeed>1.25</HackingSpeed>
+          <HackingStealth>1.25</HackingStealth>
+          <HuntingStealth>1.25</HuntingStealth>
+          <MiningSpeed>2.0</MiningSpeed>
+          <!-- <MiningYield>1.0</MiningYield> -->
+          <!-- <PlantHarvestYield>1.0</PlantHarvestYield> -->
+          <PlantWorkSpeed>2.0</PlantWorkSpeed>
+          <ReadingSpeed>2.0</ReadingSpeed>
+          <ResearchSpeed>1.25</ResearchSpeed>
+          <SmoothingSpeed>1.25</SmoothingSpeed>
+          <WorkSpeedGlobal>1.25</WorkSpeedGlobal>
+          <PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">1.5</PruningSpeed>
+          <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">2.0</SuppressionPower>
+          <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">1.25</WorkSpeedGlobalOffsetMech>
+          <MedicalOperationSpeed>1.25</MedicalOperationSpeed>
+          <MedicalSurgerySuccessChance>1.25</MedicalSurgerySuccessChance>
+          <MedicalTendQuality>1.25</MedicalTendQuality>
+          <MedicalTendSpeed>1.5</MedicalTendSpeed>
+          <!-- <ButcheryFleshEfficiency>1.0</ButcheryFleshEfficiency> -->
+          <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
+          <!-- <ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency> -->
+          <ButcheryMechanoidSpeed>1.25</ButcheryMechanoidSpeed>
+          <CookSpeed>2.5</CookSpeed>
+          <DrugCookingSpeed>1.25</DrugCookingSpeed>
+          <DrugSynthesisSpeed>1.25</DrugSynthesisSpeed>
+          <FoodPoisonChance>0.5</FoodPoisonChance>
+          <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+          <SmeltingSpeed>1.25</SmeltingSpeed>
+          <BiosculpterOccupantSpeed MayRequire="Ludeon.RimWorld.Ideology">2.0</BiosculpterOccupantSpeed>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+          <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.25</ConversionPower>
+          <!-- <MeleeDodgeChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceIndoorsDarkOffset> -->
+          <!-- <MeleeDodgeChanceIndoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceIndoorsLitOffset> -->
+          <!-- <MeleeDodgeChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceOutdoorsDarkOffset> -->
+          <!-- <MeleeDodgeChanceOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceOutdoorsLitOffset> -->
+          <!-- <MeleeHitChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceIndoorsDarkOffset> -->
+          <!-- <MeleeHitChanceIndoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceIndoorsLitOffset> -->
+          <!-- <MeleeHitChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceOutdoorsDarkOffset> -->
+          <!-- <MeleeHitChanceOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceOutdoorsLitOffset> -->
+          <!-- <ShootingAccuracyIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyIndoorsDarkOffset> -->
+          <!-- <ShootingAccuracyIndoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyIndoorsLitOffset> -->
+          <!-- <ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyOutdoorsDarkOffset> -->
+          <!-- <ShootingAccuracyOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyOutdoorsLitOffset> -->
+          <!-- <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">1.0</SocialIdeoSpreadFrequencyFactor> -->
+          <ActivitySuppressionRate MayRequire="Ludeon.RimWorld.Anomaly">2.0</ActivitySuppressionRate>
+          <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">1.25</EntityStudyRate>
+          <!-- <StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">1.0</StudyEfficiency> -->
+        </statFactors>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <!-- tier2 -->
+  <TraitDef>
+    <defName>RagnaroksTraitsTier2</defName>
+    <label>`RagnaroksTraitsTier2Label`</label>
+    <description>`RagnaroksTraitsTier2Description`</description>
+    <commonality>0.00</commonality>
+    <conflictingTraits>
+      <li>RagnaroksTraitsTier1</li>
+      <li>RagnaroksTraitsTier3</li>
+    </conflictingTraits>
+    <degreeDatas>
+      <li>
+        <label>`RagnaroksTraitsTier2Label`</label>
+        <description>`RagnaroksTraitsTier2Description`</description>
+        <socialFightChanceFactor>0.085</socialFightChanceFactor>
+        <statOffsets>
+          <PawnBeauty>2</PawnBeauty>
+        </statOffsets>
+        <statFactors>
+          <AimingDelayFactor>0.165</AimingDelayFactor>
+          <IncomingDamageFactor>0.165</IncomingDamageFactor>
+          <MeleeArmorPenetration>0.165</MeleeArmorPenetration>
+          <MeleeCooldownFactor>0.165</MeleeCooldownFactor>
+          <MeleeDamageFactor>6.0</MeleeDamageFactor>
+          <MeleeDodgeChance>20.0</MeleeDodgeChance>
+          <MeleeDPS>6.0</MeleeDPS>
+          <MeleeHitChance>6.0</MeleeHitChance>
+          <MortarMissRadiusFactor>0.165</MortarMissRadiusFactor>
+          <PawnTrapSpringChance>0.165</PawnTrapSpringChance>
+          <RangedCooldownFactor>0.165</RangedCooldownFactor>
+          <!-- <ShootingAccuracyFactor_Touch>1.0</ShootingAccuracyFactor_Touch>
+          <ShootingAccuracyFactor_Short>1.0</ShootingAccuracyFactor_Short>
+          <ShootingAccuracyFactor_Medium>1.0</ShootingAccuracyFactor_Medium>
+          <ShootingAccuracyFactor_Long>1.0</ShootingAccuracyFactor_Long> -->
+          <ShootingAccuracyPawn>8.0</ShootingAccuracyPawn>
+          <StaggerDurationFactor>0.165</StaggerDurationFactor>
+          <MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">6.0</MeleeDoorDamageFactor>
+          <!-- <ShootingAccuracyChildFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</ShootingAccuracyChildFactor> -->
+          <AnimalsLearningFactor>2.5</AnimalsLearningFactor>
+          <!-- 在床上时饥饿速度，这里当作 debuff，能力强饿得快没毛病 -->
+          <BedHungerRateFactor>2.5</BedHungerRateFactor>
+          <CaravanRidingSpeedFactor>6.0</CaravanRidingSpeedFactor>
+          <CarryingCapacity>12.0</CarryingCapacity>
+          <ComfyTemperatureMax>6.0</ComfyTemperatureMax>
+          <ComfyTemperatureMin>-6.0</ComfyTemperatureMin>
+          <CrawlSpeed>12.0</CrawlSpeed>
+          <EatingSpeed>2.5</EatingSpeed>
+          <FilthRate>0.165</FilthRate>
+          <FlightCooldown>0.165</FlightCooldown>
+          <MaxFlightTime>6.0</MaxFlightTime>
+          <ForagedNutritionPerDay>2.0</ForagedNutritionPerDay>
+          <GlobalLearningFactor>2.5</GlobalLearningFactor>
+          <ImmunityGainSpeed>6.0</ImmunityGainSpeed>
+          <InjuryHealingFactor>6.0</InjuryHealingFactor>
+          <JoyFallRateFactor>0.165</JoyFallRateFactor>
+          <!-- <LeatherAmount>1.0</LeatherAmount> -->
+          <LifespanFactor>2.5</LifespanFactor>
+          <!-- 营养需求，增加一点作为 debuff，能力强吃得多没毛病 -->
+          <MaxNutrition>2.5</MaxNutrition>
+          <!-- <MeatAmount>1.0</MeatAmount> -->
+          <MeditationFocusGain>6.0</MeditationFocusGain>
+          <MentalBreakThreshold>0.165</MentalBreakThreshold>
+          <!-- <MinimumHandlingSkill>1.0</MinimumHandlingSkill> -->
+          <MoveSpeed>12.0</MoveSpeed>
+          <PainShockThreshold>6.0</PainShockThreshold>
+          <PsychicEntropyMax>6.0</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate>6.0</PsychicEntropyRecoveryRate>
+          <!-- <PsychicSensitivity>1.0</PsychicSensitivity> -->
+          <RestFallRateFactor>0.165</RestFallRateFactor>
+          <RestRateMultiplier>2.5</RestRateMultiplier>
+          <ToxicEnvironmentResistance>6.0</ToxicEnvironmentResistance>
+          <ToxicResistance>6.0</ToxicResistance>
+          <!-- <Wildness>1.0</Wildness> -->
+          <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.165</PsychicEntropyGain>
+          <!-- <Terror MayRequire="Ludeon.RimWorld.Ideology">1.0</Terror> -->
+          <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">0.165</BandwidthCost>
+          <CancerRate MayRequire="Ludeon.RimWorld.Biotech">0.165</CancerRate>
+          <ControlTakingTime MayRequire="Ludeon.RimWorld.Biotech">0.165</ControlTakingTime>
+          <EMPResistance MayRequire="Ludeon.RimWorld.Biotech">6.0</EMPResistance>
+          <!-- <Fertility MayRequire="Ludeon.RimWorld.Biotech">1.0</Fertility> -->
+          <GrowthVatOccupantSpeed MayRequire="Ludeon.RimWorld.Biotech">6.0</GrowthVatOccupantSpeed>
+          <!-- <HemogenGainFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</HemogenGainFactor> -->
+          <LearningRateFactor MayRequire="Ludeon.RimWorld.Biotech">6.0</LearningRateFactor>
+          <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">6.0</MechBandwidth>
+          <!-- <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">1.0</MechControlGroups> -->
+          <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.165</MechEnergyLossPerHP>
+          <MechEnergyUsageFactor MayRequire="Ludeon.RimWorld.Biotech">0.165</MechEnergyUsageFactor>
+          <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">6.0</MechFormingSpeed>
+          <MechRemoteRepairDistance MayRequire="Ludeon.RimWorld.Biotech">6.0</MechRemoteRepairDistance>
+          <MechRemoteShieldDistance MayRequire="Ludeon.RimWorld.Biotech">6.0</MechRemoteShieldDistance>
+          <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">6.0</MechRemoteShieldEnergy>
+          <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">6.0</MechRepairSpeed>
+          <!-- <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</RawNutritionFactor> -->
+          <RestFallRateFactor MayRequire="Ludeon.RimWorld.Biotech">0.165</RestFallRateFactor>
+          <SubcoreEncodingSpeed MayRequire="Ludeon.RimWorld.Biotech">6.0</SubcoreEncodingSpeed>
+          <!-- <WastepacksPerRecharge MayRequire="Ludeon.RimWorld.Biotech">1.0</WastepacksPerRecharge> -->
+          <FishingSpeed MayRequire="Ludeon.RimWorld.Odyssey">6.0</FishingSpeed>
+          <!-- <FishingYield MayRequire="Ludeon.RimWorld.Odyssey">1.0</FishingYield> -->
+          <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">6.0</PilotingAbility>
+          <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">6.0</VacuumResistance>
+          <ArrestSuccessChance>2.5</ArrestSuccessChance>
+          <!-- <BondAnimalChanceFactor>1.0</BondAnimalChanceFactor> -->
+          <!-- <DrugSellPriceImprovement>1.0</DrugSellPriceImprovement> -->
+          <NegotiationAbility>2.5</NegotiationAbility>
+          <SocialImpact>2.5</SocialImpact>
+          <TameAnimalChance>6.0</TameAnimalChance>
+          <TradePriceImprovement>2.5</TradePriceImprovement>
+          <TrainAnimalChance>2.5</TrainAnimalChance>
+          <!-- <AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">1.0</AnimalProductsSellImprovement> -->
+          <!-- <SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">1.0</SlaveSuppressionFallRate> -->
+          <AnimalGatherSpeed>6.0</AnimalGatherSpeed>
+          <!-- <AnimalGatherYield>1.0</AnimalGatherYield> -->
+          <CleaningSpeed>6.0</CleaningSpeed>
+          <ConstructionSpeed>6.0</ConstructionSpeed>
+          <ConstructSuccessChance>6.0</ConstructSuccessChance>
+          <DeepDrillingSpeed>6.0</DeepDrillingSpeed>
+          <!-- <DrugHarvestYield>1.0</DrugHarvestYield> -->
+          <FixBrokenDownBuildingSuccessChance>6.0</FixBrokenDownBuildingSuccessChance>
+          <HackingSpeed>2.5</HackingSpeed>
+          <HackingStealth>2.5</HackingStealth>
+          <HuntingStealth>2.5</HuntingStealth>
+          <MiningSpeed>6.0</MiningSpeed>
+          <!-- <MiningYield>1.0</MiningYield> -->
+          <!-- <PlantHarvestYield>1.0</PlantHarvestYield> -->
+          <PlantWorkSpeed>6.0</PlantWorkSpeed>
+          <ReadingSpeed>6.0</ReadingSpeed>
+          <ResearchSpeed>2.5</ResearchSpeed>
+          <SmoothingSpeed>2.5</SmoothingSpeed>
+          <WorkSpeedGlobal>2.5</WorkSpeedGlobal>
+          <PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">3.0</PruningSpeed>
+          <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">6.0</SuppressionPower>
+          <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">2.5</WorkSpeedGlobalOffsetMech>
+          <MedicalOperationSpeed>2.5</MedicalOperationSpeed>
+          <MedicalSurgerySuccessChance>2.5</MedicalSurgerySuccessChance>
+          <MedicalTendQuality>2.5</MedicalTendQuality>
+          <MedicalTendSpeed>3.0</MedicalTendSpeed>
+          <!-- <ButcheryFleshEfficiency>1.0</ButcheryFleshEfficiency> -->
+          <ButcheryFleshSpeed>2.5</ButcheryFleshSpeed>
+          <!-- <ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency> -->
+          <ButcheryMechanoidSpeed>2.5</ButcheryMechanoidSpeed>
+          <CookSpeed>5.0</CookSpeed>
+          <DrugCookingSpeed>2.5</DrugCookingSpeed>
+          <DrugSynthesisSpeed>2.5</DrugSynthesisSpeed>
+          <FoodPoisonChance>0.165</FoodPoisonChance>
+          <GeneralLaborSpeed>2.5</GeneralLaborSpeed>
+          <SmeltingSpeed>2.5</SmeltingSpeed>
+          <BiosculpterOccupantSpeed MayRequire="Ludeon.RimWorld.Ideology">6.0</BiosculpterOccupantSpeed>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.165</CertaintyLossFactor>
+          <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">2.5</ConversionPower>
+          <!-- <MeleeDodgeChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceIndoorsDarkOffset> -->
+          <!-- <MeleeDodgeChanceIndoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceIndoorsLitOffset> -->
+          <!-- <MeleeDodgeChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceOutdoorsDarkOffset> -->
+          <!-- <MeleeDodgeChanceOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceOutdoorsLitOffset> -->
+          <!-- <MeleeHitChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceIndoorsDarkOffset> -->
+          <!-- <MeleeHitChanceIndoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceIndoorsLitOffset> -->
+          <!-- <MeleeHitChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceOutdoorsDarkOffset> -->
+          <!-- <MeleeHitChanceOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceOutdoorsLitOffset> -->
+          <!-- <ShootingAccuracyIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyIndoorsDarkOffset> -->
+          <!-- <ShootingAccuracyIndoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyIndoorsLitOffset> -->
+          <!-- <ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyOutdoorsDarkOffset> -->
+          <!-- <ShootingAccuracyOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyOutdoorsLitOffset> -->
+          <!-- <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">1.0</SocialIdeoSpreadFrequencyFactor> -->
+          <ActivitySuppressionRate MayRequire="Ludeon.RimWorld.Anomaly">6.0</ActivitySuppressionRate>
+          <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">2.5</EntityStudyRate>
+          <!-- <StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">1.0</StudyEfficiency> -->
+        </statFactors>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <!-- tier3 -->
+  <TraitDef>
+    <defName>RagnaroksTraitsTier3</defName>
+    <label>`RagnaroksTraitsTier3Label`</label>
+    <description>`RagnaroksTraitsTier3Description`</description>
+    <commonality>0.00</commonality>
+    <conflictingTraits>
+      <li>RagnaroksTraitsTier1</li>
+      <li>RagnaroksTraitsTier2</li>
+    </conflictingTraits>
+    <degreeDatas>
+      <li>
+        <label>`RagnaroksTraitsTier3Label`</label>
+        <description>`RagnaroksTraitsTier3Description`</description>
+        <socialFightChanceFactor>0.0</socialFightChanceFactor>
+        <statOffsets>
+          <PawnBeauty>4</PawnBeauty>
+        </statOffsets>
+        <statFactors>
+          <AimingDelayFactor>0.05</AimingDelayFactor>
+          <IncomingDamageFactor>0.05</IncomingDamageFactor>
+          <MeleeArmorPenetration>0.05</MeleeArmorPenetration>
+          <MeleeCooldownFactor>0.05</MeleeCooldownFactor>
+          <MeleeDamageFactor>18.0</MeleeDamageFactor>
+          <MeleeDodgeChance>60.0</MeleeDodgeChance>
+          <MeleeDPS>18.0</MeleeDPS>
+          <MeleeHitChance>18.0</MeleeHitChance>
+          <MortarMissRadiusFactor>0.05</MortarMissRadiusFactor>
+          <PawnTrapSpringChance>0.05</PawnTrapSpringChance>
+          <RangedCooldownFactor>0.05</RangedCooldownFactor>
+          <!-- <ShootingAccuracyFactor_Touch>1.0</ShootingAccuracyFactor_Touch>
+          <ShootingAccuracyFactor_Short>1.0</ShootingAccuracyFactor_Short>
+          <ShootingAccuracyFactor_Medium>1.0</ShootingAccuracyFactor_Medium>
+          <ShootingAccuracyFactor_Long>1.0</ShootingAccuracyFactor_Long> -->
+          <ShootingAccuracyPawn>16.0</ShootingAccuracyPawn>
+          <StaggerDurationFactor>0.05</StaggerDurationFactor>
+          <MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">18.0</MeleeDoorDamageFactor>
+          <!-- <ShootingAccuracyChildFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</ShootingAccuracyChildFactor> -->
+          <AnimalsLearningFactor>5.0</AnimalsLearningFactor>
+          <!-- 在床上时饥饿速度，这里当作 debuff，能力强饿得快没毛病 -->
+          <BedHungerRateFactor>5.0</BedHungerRateFactor>
+          <CaravanRidingSpeedFactor>18.0</CaravanRidingSpeedFactor>
+          <CarryingCapacity>36.0</CarryingCapacity>
+          <ComfyTemperatureMax>18.0</ComfyTemperatureMax>
+          <ComfyTemperatureMin>-18.0</ComfyTemperatureMin>
+          <CrawlSpeed>36.0</CrawlSpeed>
+          <EatingSpeed>5.0</EatingSpeed>
+          <FilthRate>0.05</FilthRate>
+          <FlightCooldown>0.05</FlightCooldown>
+          <MaxFlightTime>18.0</MaxFlightTime>
+          <ForagedNutritionPerDay>3.0</ForagedNutritionPerDay>
+          <GlobalLearningFactor>5.0</GlobalLearningFactor>
+          <ImmunityGainSpeed>18.0</ImmunityGainSpeed>
+          <InjuryHealingFactor>18.0</InjuryHealingFactor>
+          <JoyFallRateFactor>0.05</JoyFallRateFactor>
+          <!-- <LeatherAmount>1.0</LeatherAmount> -->
+          <LifespanFactor>5.0</LifespanFactor>
+          <!-- 营养需求，增加一点作为 debuff，能力强吃得多没毛病 -->
+          <MaxNutrition>5.0</MaxNutrition>
+          <!-- <MeatAmount>1.0</MeatAmount> -->
+          <MeditationFocusGain>18.0</MeditationFocusGain>
+          <MentalBreakThreshold>0.05</MentalBreakThreshold>
+          <!-- <MinimumHandlingSkill>1.0</MinimumHandlingSkill> -->
+          <MoveSpeed>36.0</MoveSpeed>
+          <PainShockThreshold>18.0</PainShockThreshold>
+          <PsychicEntropyMax>18.0</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate>18.0</PsychicEntropyRecoveryRate>
+          <!-- <PsychicSensitivity>1.0</PsychicSensitivity> -->
+          <RestFallRateFactor>0.05</RestFallRateFactor>
+          <RestRateMultiplier>5.0</RestRateMultiplier>
+          <ToxicEnvironmentResistance>18.0</ToxicEnvironmentResistance>
+          <ToxicResistance>18.0</ToxicResistance>
+          <!-- <Wildness>1.0</Wildness> -->
+          <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicEntropyGain>
+          <!-- <Terror MayRequire="Ludeon.RimWorld.Ideology">1.0</Terror> -->
+          <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">0.05</BandwidthCost>
+          <CancerRate MayRequire="Ludeon.RimWorld.Biotech">0.05</CancerRate>
+          <ControlTakingTime MayRequire="Ludeon.RimWorld.Biotech">0.05</ControlTakingTime>
+          <EMPResistance MayRequire="Ludeon.RimWorld.Biotech">18.0</EMPResistance>
+          <!-- <Fertility MayRequire="Ludeon.RimWorld.Biotech">1.0</Fertility> -->
+          <GrowthVatOccupantSpeed MayRequire="Ludeon.RimWorld.Biotech">18.0</GrowthVatOccupantSpeed>
+          <!-- <HemogenGainFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</HemogenGainFactor> -->
+          <LearningRateFactor MayRequire="Ludeon.RimWorld.Biotech">18.0</LearningRateFactor>
+          <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">18.0</MechBandwidth>
+          <!-- <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">1.0</MechControlGroups> -->
+          <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.05</MechEnergyLossPerHP>
+          <MechEnergyUsageFactor MayRequire="Ludeon.RimWorld.Biotech">0.05</MechEnergyUsageFactor>
+          <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">18.0</MechFormingSpeed>
+          <MechRemoteRepairDistance MayRequire="Ludeon.RimWorld.Biotech">18.0</MechRemoteRepairDistance>
+          <MechRemoteShieldDistance MayRequire="Ludeon.RimWorld.Biotech">18.0</MechRemoteShieldDistance>
+          <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">18.0</MechRemoteShieldEnergy>
+          <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">18.0</MechRepairSpeed>
+          <!-- <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</RawNutritionFactor> -->
+          <RestFallRateFactor MayRequire="Ludeon.RimWorld.Biotech">0.05</RestFallRateFactor>
+          <SubcoreEncodingSpeed MayRequire="Ludeon.RimWorld.Biotech">18.0</SubcoreEncodingSpeed>
+          <!-- <WastepacksPerRecharge MayRequire="Ludeon.RimWorld.Biotech">1.0</WastepacksPerRecharge> -->
+          <FishingSpeed MayRequire="Ludeon.RimWorld.Odyssey">18.0</FishingSpeed>
+          <!-- <FishingYield MayRequire="Ludeon.RimWorld.Odyssey">1.0</FishingYield> -->
+          <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">18.0</PilotingAbility>
+          <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">18.0</VacuumResistance>
+          <ArrestSuccessChance>5.0</ArrestSuccessChance>
+          <!-- <BondAnimalChanceFactor>1.0</BondAnimalChanceFactor> -->
+          <!-- <DrugSellPriceImprovement>1.0</DrugSellPriceImprovement> -->
+          <NegotiationAbility>5.0</NegotiationAbility>
+          <SocialImpact>5.0</SocialImpact>
+          <TameAnimalChance>18.0</TameAnimalChance>
+          <TradePriceImprovement>5.0</TradePriceImprovement>
+          <TrainAnimalChance>5.0</TrainAnimalChance>
+          <!-- <AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">1.0</AnimalProductsSellImprovement> -->
+          <!-- <SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">1.0</SlaveSuppressionFallRate> -->
+          <AnimalGatherSpeed>18.0</AnimalGatherSpeed>
+          <!-- <AnimalGatherYield>1.0</AnimalGatherYield> -->
+          <CleaningSpeed>18.0</CleaningSpeed>
+          <ConstructionSpeed>18.0</ConstructionSpeed>
+          <ConstructSuccessChance>18.0</ConstructSuccessChance>
+          <DeepDrillingSpeed>18.0</DeepDrillingSpeed>
+          <!-- <DrugHarvestYield>1.0</DrugHarvestYield> -->
+          <FixBrokenDownBuildingSuccessChance>18.0</FixBrokenDownBuildingSuccessChance>
+          <HackingSpeed>5.0</HackingSpeed>
+          <HackingStealth>5.0</HackingStealth>
+          <HuntingStealth>5.0</HuntingStealth>
+          <MiningSpeed>18.0</MiningSpeed>
+          <!-- <MiningYield>1.0</MiningYield> -->
+          <!-- <PlantHarvestYield>1.0</PlantHarvestYield> -->
+          <PlantWorkSpeed>18.0</PlantWorkSpeed>
+          <ReadingSpeed>18.0</ReadingSpeed>
+          <ResearchSpeed>5.0</ResearchSpeed>
+          <SmoothingSpeed>5.0</SmoothingSpeed>
+          <WorkSpeedGlobal>5.0</WorkSpeedGlobal>
+          <PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">6.0</PruningSpeed>
+          <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">18.0</SuppressionPower>
+          <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">5.0</WorkSpeedGlobalOffsetMech>
+          <MedicalOperationSpeed>5.0</MedicalOperationSpeed>
+          <MedicalSurgerySuccessChance>5.0</MedicalSurgerySuccessChance>
+          <MedicalTendQuality>5.0</MedicalTendQuality>
+          <MedicalTendSpeed>6.0</MedicalTendSpeed>
+          <!-- <ButcheryFleshEfficiency>1.0</ButcheryFleshEfficiency> -->
+          <ButcheryFleshSpeed>5.0</ButcheryFleshSpeed>
+          <!-- <ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency> -->
+          <ButcheryMechanoidSpeed>5.0</ButcheryMechanoidSpeed>
+          <CookSpeed>10.0</CookSpeed>
+          <DrugCookingSpeed>5.0</DrugCookingSpeed>
+          <DrugSynthesisSpeed>5.0</DrugSynthesisSpeed>
+          <FoodPoisonChance>0.05</FoodPoisonChance>
+          <GeneralLaborSpeed>5.0</GeneralLaborSpeed>
+          <SmeltingSpeed>5.0</SmeltingSpeed>
+          <BiosculpterOccupantSpeed MayRequire="Ludeon.RimWorld.Ideology">18.0</BiosculpterOccupantSpeed>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.05</CertaintyLossFactor>
+          <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">5.0</ConversionPower>
+          <!-- <MeleeDodgeChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceIndoorsDarkOffset> -->
+          <!-- <MeleeDodgeChanceIndoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceIndoorsLitOffset> -->
+          <!-- <MeleeDodgeChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceOutdoorsDarkOffset> -->
+          <!-- <MeleeDodgeChanceOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeDodgeChanceOutdoorsLitOffset> -->
+          <!-- <MeleeHitChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceIndoorsDarkOffset> -->
+          <!-- <MeleeHitChanceIndoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceIndoorsLitOffset> -->
+          <!-- <MeleeHitChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceOutdoorsDarkOffset> -->
+          <!-- <MeleeHitChanceOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</MeleeHitChanceOutdoorsLitOffset> -->
+          <!-- <ShootingAccuracyIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyIndoorsDarkOffset> -->
+          <!-- <ShootingAccuracyIndoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyIndoorsLitOffset> -->
+          <!-- <ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyOutdoorsDarkOffset> -->
+          <!-- <ShootingAccuracyOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">1.0</ShootingAccuracyOutdoorsLitOffset> -->
+          <!-- <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">1.0</SocialIdeoSpreadFrequencyFactor> -->
+          <ActivitySuppressionRate MayRequire="Ludeon.RimWorld.Anomaly">18.0</ActivitySuppressionRate>
+          <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">5.0</EntityStudyRate>
+          <!-- <StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">1.0</StudyEfficiency> -->
+        </statFactors>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- reference：https://rimworld.huijiwiki.com/wiki/Mod_%E5%88%B6%E4%BD%9C_-_About.xml -->
+<ModMetaData>
+  <name>RagnaroksTraits</name>
+  <author>高耳鸡</author>
+  <packageId>ragnaroks.ragnarokstraits</packageId>
+  <description>add some useful traits, just for fun</description>
+  <modVersion>1.6.1</modVersion>
+  <supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+  <url>https://steamcommunity.com/app/294100/workshop/</url>
+  <loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.Rimworld.Ideology</li>
+		<li>Ludeon.Rimworld.Biotech</li>
+    <li>Ludeon.Rimworld.Anomaly</li>
+		<li>Ludeon.Rimworld.Odyssey</li>
+    <li>UnlimitedHugs.HugsLib</li>
+    <li>avilmask.CommonSense</li>
+  </loadAfter>
+  <loadBefore>
+    <li>Owlchemist.CherryPicker</li>
+    <li>MalteSchulze.RIMMSqol</li>
+  </loadBefore>
+  <!-- <incompatibleWith>
+    <li>CETeam.CombatExtended</li>
+  </incompatibleWith> -->
+</ModMetaData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RagnaroksTraitsTier1.label>Tier1</RagnaroksTraitsTier1.label>
+  <RagnaroksTraitsTier1.description>Tier1: Adventurer</RagnaroksTraitsTier1.description>
+  <RagnaroksTraitsTier1.degreeDatas.0.label>Tier1</RagnaroksTraitsTier1.degreeDatas.0.label>
+  <RagnaroksTraitsTier1.degreeDatas.0.description>Tier1: Adventurer</RagnaroksTraitsTier1.degreeDatas.0.description>
+
+  <RagnaroksTraitsTier2.label>Tier2</RagnaroksTraitsTier2.label>
+  <RagnaroksTraitsTier2.description>Tier2: Hero</RagnaroksTraitsTier2.description>
+  <RagnaroksTraitsTier2.degreeDatas.0.label>Tier2</RagnaroksTraitsTier2.degreeDatas.0.label>
+  <RagnaroksTraitsTier2.degreeDatas.0.description>Tier2: Hero</RagnaroksTraitsTier2.degreeDatas.0.description>
+
+  <RagnaroksTraitsTier3.label>Tier3</RagnaroksTraitsTier3.label>
+  <RagnaroksTraitsTier3.description>Tier3: Legend</RagnaroksTraitsTier3.description>
+  <RagnaroksTraitsTier3.degreeDatas.0.label>Tier3</RagnaroksTraitsTier3.degreeDatas.0.label>
+  <RagnaroksTraitsTier3.degreeDatas.0.description>Tier3: Legend</RagnaroksTraitsTier3.degreeDatas.0.description>
+</LanguageData>
