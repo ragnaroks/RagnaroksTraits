@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RagnaroksThoughtsTier1.stages.0.label>Tier1</RagnaroksThoughtsTier1.stages.0.label>
+  <RagnaroksThoughtsTier1.stages.0.description>Tier1：everyone begins as an adventurer</RagnaroksThoughtsTier1.stages.0.description>
+
+  <RagnaroksThoughtsTier2.stages.0.label>Tier2</RagnaroksThoughtsTier2.stages.0.label>
+  <RagnaroksThoughtsTier2.stages.0.description>Tier2：heroes will be remembered</RagnaroksThoughtsTier2.stages.0.description>
+
+  <RagnaroksThoughtsTier3.stages.0.label>Tier3</RagnaroksThoughtsTier3.stages.0.label>
+  <RagnaroksThoughtsTier3.stages.0.description>Tier3：i am legend</RagnaroksThoughtsTier3.stages.0.description>
+</LanguageData>

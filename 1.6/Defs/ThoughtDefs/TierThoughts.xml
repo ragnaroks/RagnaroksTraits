@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- reference：https://steamcommunity.com/sharedfiles/filedetails/?id=1331524608 -->
+<Defs>
+  <ThoughtDef>
+    <defName>RagnaroksThoughtsTier1</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>RagnaroksTraitsTier1</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <baseMoodEffect>16</baseMoodEffect>
+        <label>`RagnaroksThoughtsTier1Label`</label>
+        <description>`RagnaroksThoughtsTier1Description`</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>RagnaroksThoughtsTier2</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>RagnaroksTraitsTier2</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <baseMoodEffect>32</baseMoodEffect>
+        <label>`RagnaroksThoughtsTier2Label`</label>
+        <description>`RagnaroksThoughtsTier2Description`</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>RagnaroksThoughtsTier3</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>RagnaroksTraitsTier3</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <baseMoodEffect>64</baseMoodEffect>
+        <label>`RagnaroksThoughtsTier3Label`</label>
+        <description>`RagnaroksThoughtsTier3Description`</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

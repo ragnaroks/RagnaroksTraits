@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <RagnaroksTraitsTier1.label>Tier1</RagnaroksTraitsTier1.label>
-  <RagnaroksTraitsTier1.description>Tier1: 勇者</RagnaroksTraitsTier1.description>
+  <RagnaroksTraitsTier1.description>Tier1: 冒险者</RagnaroksTraitsTier1.description>
   <RagnaroksTraitsTier1.degreeDatas.0.label>Tier1</RagnaroksTraitsTier1.degreeDatas.0.label>
-  <RagnaroksTraitsTier1.degreeDatas.0.description>Tier1: 勇者</RagnaroksTraitsTier1.degreeDatas.0.description>
+  <RagnaroksTraitsTier1.degreeDatas.0.description>Tier1: 冒险者</RagnaroksTraitsTier1.degreeDatas.0.description>
 
   <RagnaroksTraitsTier2.label>Tier2</RagnaroksTraitsTier2.label>
   <RagnaroksTraitsTier2.description>Tier2: 英雄</RagnaroksTraitsTier2.description>

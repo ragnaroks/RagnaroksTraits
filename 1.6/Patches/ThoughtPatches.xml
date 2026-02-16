@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="ObservedLayingCorpse"]/nullifyingTraits</xpath>
+		<value>
+			<li>RagnaroksTraitsTier1</li>
+      <li>RagnaroksTraitsTier2</li>
+      <li>RagnaroksTraitsTier3</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="Pain"]/nullifyingTraits</xpath>
+		<value>
+			<li>RagnaroksTraitsTier1</li>
+      <li>RagnaroksTraitsTier2</li>
+      <li>RagnaroksTraitsTier3</li>
+		</value>
+	</Operation>
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="Naked"]/nullifyingTraits</xpath>
+		<value>
+			<li>RagnaroksTraitsTier1</li>
+      <li>RagnaroksTraitsTier2</li>
+      <li>RagnaroksTraitsTier3</li>
+		</value>
+	</Operation>
+</Patch>

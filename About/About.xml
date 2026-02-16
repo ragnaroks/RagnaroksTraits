@@ -5,11 +5,11 @@
   <author>高耳鸡</author>
   <packageId>ragnaroks.ragnarokstraits</packageId>
   <description>add some useful traits, just for fun</description>
-  <modVersion>1.6.1</modVersion>
+  <modVersion>1.6.2</modVersion>
   <supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-  <url>https://steamcommunity.com/app/294100/workshop/</url>
+  <url>https://github.com/ragnaroks/RagnaroksTraits</url>
   <loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
@@ -19,6 +19,7 @@
 		<li>Ludeon.Rimworld.Odyssey</li>
     <li>UnlimitedHugs.HugsLib</li>
     <li>avilmask.CommonSense</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
   </loadAfter>
   <loadBefore>
     <li>Owlchemist.CherryPicker</li>

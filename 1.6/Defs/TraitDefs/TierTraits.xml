@@ -18,6 +18,9 @@
         <socialFightChanceFactor>0.25</socialFightChanceFactor>
         <statOffsets>
           <PawnBeauty>1</PawnBeauty>
+          <ComfyTemperatureMax>48.0</ComfyTemperatureMax>
+          <ComfyTemperatureMin>-48.0</ComfyTemperatureMin>
+          <Flammability>-48.0</Flammability>
         </statOffsets>
         <statFactors>
           <AimingDelayFactor>0.5</AimingDelayFactor>
@@ -42,16 +45,15 @@
           <AnimalsLearningFactor>1.25</AnimalsLearningFactor>
           <!-- 在床上时饥饿速度，这里当作 debuff，能力强饿得快没毛病 -->
           <BedHungerRateFactor>1.25</BedHungerRateFactor>
-          <CaravanRidingSpeedFactor>2.0</CaravanRidingSpeedFactor>
+          <!-- <CaravanRidingSpeedFactor>1.0</CaravanRidingSpeedFactor> -->
           <CarryingCapacity>4.0</CarryingCapacity>
-          <ComfyTemperatureMax>2.0</ComfyTemperatureMax>
-          <ComfyTemperatureMin>-2.0</ComfyTemperatureMin>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">15.0</VEF_MassCarryCapacity>
           <CrawlSpeed>4.0</CrawlSpeed>
           <EatingSpeed>1.25</EatingSpeed>
           <FilthRate>0.5</FilthRate>
           <FlightCooldown>0.5</FlightCooldown>
           <MaxFlightTime>2.0</MaxFlightTime>
-          <ForagedNutritionPerDay>1.0</ForagedNutritionPerDay>
+          <ForagedNutritionPerDay>1.25</ForagedNutritionPerDay>
           <GlobalLearningFactor>1.25</GlobalLearningFactor>
           <ImmunityGainSpeed>2.0</ImmunityGainSpeed>
           <InjuryHealingFactor>2.0</InjuryHealingFactor>
@@ -188,6 +190,9 @@
         <socialFightChanceFactor>0.085</socialFightChanceFactor>
         <statOffsets>
           <PawnBeauty>2</PawnBeauty>
+          <ComfyTemperatureMax>96.0</ComfyTemperatureMax>
+          <ComfyTemperatureMin>-96.0</ComfyTemperatureMin>
+          <Flammability>-96.0</Flammability>
         </statOffsets>
         <statFactors>
           <AimingDelayFactor>0.165</AimingDelayFactor>
@@ -212,16 +217,15 @@
           <AnimalsLearningFactor>2.5</AnimalsLearningFactor>
           <!-- 在床上时饥饿速度，这里当作 debuff，能力强饿得快没毛病 -->
           <BedHungerRateFactor>2.5</BedHungerRateFactor>
-          <CaravanRidingSpeedFactor>6.0</CaravanRidingSpeedFactor>
+          <!-- <CaravanRidingSpeedFactor>1.0</CaravanRidingSpeedFactor> -->
           <CarryingCapacity>12.0</CarryingCapacity>
-          <ComfyTemperatureMax>6.0</ComfyTemperatureMax>
-          <ComfyTemperatureMin>-6.0</ComfyTemperatureMin>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">45.0</VEF_MassCarryCapacity>
           <CrawlSpeed>12.0</CrawlSpeed>
           <EatingSpeed>2.5</EatingSpeed>
           <FilthRate>0.165</FilthRate>
           <FlightCooldown>0.165</FlightCooldown>
           <MaxFlightTime>6.0</MaxFlightTime>
-          <ForagedNutritionPerDay>2.0</ForagedNutritionPerDay>
+          <ForagedNutritionPerDay>2.5</ForagedNutritionPerDay>
           <GlobalLearningFactor>2.5</GlobalLearningFactor>
           <ImmunityGainSpeed>6.0</ImmunityGainSpeed>
           <InjuryHealingFactor>6.0</InjuryHealingFactor>
@@ -358,6 +362,9 @@
         <socialFightChanceFactor>0.0</socialFightChanceFactor>
         <statOffsets>
           <PawnBeauty>4</PawnBeauty>
+          <ComfyTemperatureMax>192.0</ComfyTemperatureMax>
+          <ComfyTemperatureMin>-192.0</ComfyTemperatureMin>
+          <Flammability>-192.0</Flammability>
         </statOffsets>
         <statFactors>
           <AimingDelayFactor>0.05</AimingDelayFactor>
@@ -382,16 +389,15 @@
           <AnimalsLearningFactor>5.0</AnimalsLearningFactor>
           <!-- 在床上时饥饿速度，这里当作 debuff，能力强饿得快没毛病 -->
           <BedHungerRateFactor>5.0</BedHungerRateFactor>
-          <CaravanRidingSpeedFactor>18.0</CaravanRidingSpeedFactor>
+          <!-- <CaravanRidingSpeedFactor>1.0</CaravanRidingSpeedFactor> -->
           <CarryingCapacity>36.0</CarryingCapacity>
-          <ComfyTemperatureMax>18.0</ComfyTemperatureMax>
-          <ComfyTemperatureMin>-18.0</ComfyTemperatureMin>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">145.0</VEF_MassCarryCapacity>
           <CrawlSpeed>36.0</CrawlSpeed>
           <EatingSpeed>5.0</EatingSpeed>
           <FilthRate>0.05</FilthRate>
           <FlightCooldown>0.05</FlightCooldown>
           <MaxFlightTime>18.0</MaxFlightTime>
-          <ForagedNutritionPerDay>3.0</ForagedNutritionPerDay>
+          <ForagedNutritionPerDay>5.0</ForagedNutritionPerDay>
           <GlobalLearningFactor>5.0</GlobalLearningFactor>
           <ImmunityGainSpeed>18.0</ImmunityGainSpeed>
           <InjuryHealingFactor>18.0</InjuryHealingFactor>
