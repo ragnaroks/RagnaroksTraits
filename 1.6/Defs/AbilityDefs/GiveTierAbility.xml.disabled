@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- tier1 -->
+  <AbilityDef ParentName="BaseAbility">
+    <defName>RagnaroksAbilityGiveTier1</defName>
+    <label>`RagnaroksAbilityGiveTier1Label`</label>
+    <description>`RagnaroksAbilityGiveTier1Description`</description>
+    <uiIconPath>UI/Abilities/FireballIcon</uiIconPath>
+    <aiCanUse>true</aiCanUse>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <targetRequired>true</targetRequired>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <statBases>
+			<Ability_CastingTime>30</Ability_CastingTime>
+      <Ability_EntropyGain>0</Ability_EntropyGain>
+      <Ability_GoodwillImpact>0</Ability_GoodwillImpact>
+      <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+      <Ability_Range>5</Ability_Range>
+      <Ability_RequiredPsylink>0</Ability_RequiredPsylink>
+		</statBases>
+    <verbProperties>
+			<verbClass>RagnaroksAbilityGiveTier1Verb</verbClass>
+      <drawAimPie>false</drawAimPie>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetLocations>false</canTargetLocations>
+        <factionTargetType>friendly</factionTargetType>
+			</targetParams>
+			<warmupTime>1.5</warmupTime>
+			<soundCast>PsychicInsanityLanceCast</soundCast>
+      <isViolent>false</isViolent>
+		</verbProperties>
+  </AbilityDef>
+</Defs>

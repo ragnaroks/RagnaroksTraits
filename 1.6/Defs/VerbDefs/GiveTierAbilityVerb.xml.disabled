@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- tier1 -->
+  <VerbDef ParentName="BaseVerb_AbilityProjectile">
+    <defName>RagnaroksAbilityGiveTier1Verb</defName>
+    <label>`RagnaroksAbilityGiveTier1VerbLabel`</label>
+    <description>`RagnaroksAbilityGiveTier1VerbDescription`</description>
+  </VerbDef>
+</Defs>

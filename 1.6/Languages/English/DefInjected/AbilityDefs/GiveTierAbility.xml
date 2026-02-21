@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RagnaroksAbilityGiveTier1.label>Δ Tier1</RagnaroksAbilityGiveTier1.label>
+  <RagnaroksAbilityGiveTier1.description>give Tier1 trait to others</RagnaroksAbilityGiveTier1.description>
+
+  <RagnaroksAbilityGiveTier2.label>Δ Tier2</RagnaroksAbilityGiveTier2.label>
+  <RagnaroksAbilityGiveTier2.description>give Tier2 trait to others</RagnaroksAbilityGiveTier2.description>
+
+  <RagnaroksAbilityGiveTier3.label>Δ Tier3</RagnaroksAbilityGiveTier3.label>
+  <RagnaroksAbilityGiveTier3.description>give Tier3 trait to others</RagnaroksAbilityGiveTier3.description>
+</LanguageData> 

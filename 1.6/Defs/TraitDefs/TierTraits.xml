@@ -21,6 +21,8 @@
           <ComfyTemperatureMax>48.0</ComfyTemperatureMax>
           <ComfyTemperatureMin>-48.0</ComfyTemperatureMin>
           <Flammability>-48.0</Flammability>
+          <MeleeDodgeChance>33</MeleeDodgeChance>
+          <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.33</VEF_RangedDodgeChance>
         </statOffsets>
         <statFactors>
           <AimingDelayFactor>0.5</AimingDelayFactor>
@@ -28,7 +30,6 @@
           <MeleeArmorPenetration>0.5</MeleeArmorPenetration>
           <MeleeCooldownFactor>0.5</MeleeCooldownFactor>
           <MeleeDamageFactor>2.0</MeleeDamageFactor>
-          <MeleeDodgeChance>6.5</MeleeDodgeChance>
           <MeleeDPS>2.0</MeleeDPS>
           <MeleeHitChance>2.0</MeleeHitChance>
           <MortarMissRadiusFactor>0.5</MortarMissRadiusFactor>
@@ -193,6 +194,8 @@
           <ComfyTemperatureMax>96.0</ComfyTemperatureMax>
           <ComfyTemperatureMin>-96.0</ComfyTemperatureMin>
           <Flammability>-96.0</Flammability>
+          <MeleeDodgeChance>66</MeleeDodgeChance>
+          <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.66</VEF_RangedDodgeChance>
         </statOffsets>
         <statFactors>
           <AimingDelayFactor>0.165</AimingDelayFactor>
@@ -200,7 +203,6 @@
           <MeleeArmorPenetration>0.165</MeleeArmorPenetration>
           <MeleeCooldownFactor>0.165</MeleeCooldownFactor>
           <MeleeDamageFactor>6.0</MeleeDamageFactor>
-          <MeleeDodgeChance>20.0</MeleeDodgeChance>
           <MeleeDPS>6.0</MeleeDPS>
           <MeleeHitChance>6.0</MeleeHitChance>
           <MortarMissRadiusFactor>0.165</MortarMissRadiusFactor>
@@ -365,6 +367,8 @@
           <ComfyTemperatureMax>192.0</ComfyTemperatureMax>
           <ComfyTemperatureMin>-192.0</ComfyTemperatureMin>
           <Flammability>-192.0</Flammability>
+          <MeleeDodgeChance>99</MeleeDodgeChance>
+          <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.99</VEF_RangedDodgeChance>
         </statOffsets>
         <statFactors>
           <AimingDelayFactor>0.05</AimingDelayFactor>
@@ -372,7 +376,6 @@
           <MeleeArmorPenetration>0.05</MeleeArmorPenetration>
           <MeleeCooldownFactor>0.05</MeleeCooldownFactor>
           <MeleeDamageFactor>18.0</MeleeDamageFactor>
-          <MeleeDodgeChance>60.0</MeleeDodgeChance>
           <MeleeDPS>18.0</MeleeDPS>
           <MeleeHitChance>18.0</MeleeHitChance>
           <MortarMissRadiusFactor>0.05</MortarMissRadiusFactor>
