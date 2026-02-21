@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RagnaroksAbilityGiveTier1.label>Δ Tier1</RagnaroksAbilityGiveTier1.label>
+  <RagnaroksAbilityGiveTier1.description>授予其他人 Tier1 特性</RagnaroksAbilityGiveTier1.description>
+
+  <RagnaroksAbilityGiveTier2.label>Δ Tier2</RagnaroksAbilityGiveTier2.label>
+  <RagnaroksAbilityGiveTier2.description>授予其他人 Tier2 特性</RagnaroksAbilityGiveTier2.description>
+
+  <RagnaroksAbilityGiveTier3.label>Δ Tier3</RagnaroksAbilityGiveTier3.label>
+  <RagnaroksAbilityGiveTier3.description>授予其他人 Tier3 特性</RagnaroksAbilityGiveTier3.description>
+</LanguageData> 

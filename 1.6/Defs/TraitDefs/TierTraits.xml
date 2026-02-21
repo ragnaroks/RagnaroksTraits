@@ -21,6 +21,10 @@
           <ComfyTemperatureMax>48.0</ComfyTemperatureMax>
           <ComfyTemperatureMin>-48.0</ComfyTemperatureMin>
           <Flammability>-48.0</Flammability>
+          <MeleeDodgeChance>33</MeleeDodgeChance>
+          <ToxicEnvironmentResistance>0.33</ToxicEnvironmentResistance>
+          <ToxicResistance>0.33</ToxicResistance>
+          <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.33</VEF_RangedDodgeChance>
         </statOffsets>
         <statFactors>
           <AimingDelayFactor>0.5</AimingDelayFactor>
@@ -28,31 +32,25 @@
           <MeleeArmorPenetration>0.5</MeleeArmorPenetration>
           <MeleeCooldownFactor>0.5</MeleeCooldownFactor>
           <MeleeDamageFactor>2.0</MeleeDamageFactor>
-          <MeleeDodgeChance>6.5</MeleeDodgeChance>
-          <MeleeDPS>2.0</MeleeDPS>
+          <!-- <MeleeDPS>1.0</MeleeDPS> -->
           <MeleeHitChance>2.0</MeleeHitChance>
           <MortarMissRadiusFactor>0.5</MortarMissRadiusFactor>
           <PawnTrapSpringChance>0.5</PawnTrapSpringChance>
           <RangedCooldownFactor>0.5</RangedCooldownFactor>
-          <!-- <ShootingAccuracyFactor_Touch>1.0</ShootingAccuracyFactor_Touch>
-          <ShootingAccuracyFactor_Short>1.0</ShootingAccuracyFactor_Short>
-          <ShootingAccuracyFactor_Medium>1.0</ShootingAccuracyFactor_Medium>
-          <ShootingAccuracyFactor_Long>1.0</ShootingAccuracyFactor_Long> -->
           <ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
           <StaggerDurationFactor>0.5</StaggerDurationFactor>
           <MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">2.0</MeleeDoorDamageFactor>
           <!-- <ShootingAccuracyChildFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</ShootingAccuracyChildFactor> -->
           <AnimalsLearningFactor>1.25</AnimalsLearningFactor>
-          <!-- 在床上时饥饿速度，这里当作 debuff，能力强饿得快没毛病 -->
-          <BedHungerRateFactor>1.25</BedHungerRateFactor>
+          <!-- <BedHungerRateFactor>1.0</BedHungerRateFactor> -->
           <!-- <CaravanRidingSpeedFactor>1.0</CaravanRidingSpeedFactor> -->
+          <CaravanBonusSpeedFactor>2.0</CaravanBonusSpeedFactor>
           <CarryingCapacity>4.0</CarryingCapacity>
-          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">15.0</VEF_MassCarryCapacity>
           <CrawlSpeed>4.0</CrawlSpeed>
           <EatingSpeed>1.25</EatingSpeed>
           <FilthRate>0.5</FilthRate>
-          <FlightCooldown>0.5</FlightCooldown>
-          <MaxFlightTime>2.0</MaxFlightTime>
+          <!-- <FlightCooldown>1.0</FlightCooldown> -->
+          <!-- <MaxFlightTime>1.0</MaxFlightTime> -->
           <ForagedNutritionPerDay>1.25</ForagedNutritionPerDay>
           <GlobalLearningFactor>1.25</GlobalLearningFactor>
           <ImmunityGainSpeed>2.0</ImmunityGainSpeed>
@@ -71,10 +69,7 @@
           <PsychicEntropyMax>2.0</PsychicEntropyMax>
           <PsychicEntropyRecoveryRate>2.0</PsychicEntropyRecoveryRate>
           <!-- <PsychicSensitivity>1.0</PsychicSensitivity> -->
-          <RestFallRateFactor>0.5</RestFallRateFactor>
           <RestRateMultiplier>1.25</RestRateMultiplier>
-          <ToxicEnvironmentResistance>2.0</ToxicEnvironmentResistance>
-          <ToxicResistance>2.0</ToxicResistance>
           <!-- <Wildness>1.0</Wildness> -->
           <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.5</PsychicEntropyGain>
           <!-- <Terror MayRequire="Ludeon.RimWorld.Ideology">1.0</Terror> -->
@@ -168,6 +163,10 @@
           <ActivitySuppressionRate MayRequire="Ludeon.RimWorld.Anomaly">2.0</ActivitySuppressionRate>
           <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">1.25</EntityStudyRate>
           <!-- <StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">1.0</StudyEfficiency> -->
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">15.0</VEF_MassCarryCapacity>
+          <VEF_VerbRangeFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.25</VEF_VerbRangeFactor>
+          <VEF_EnergyShieldEnergyMaxFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.0</VEF_EnergyShieldEnergyMaxFactor>
+          <!-- <VEF_FoodCapacityMultiplier MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.0</VEF_FoodCapacityMultiplier> -->
         </statFactors>
       </li>
     </degreeDatas>
@@ -193,6 +192,10 @@
           <ComfyTemperatureMax>96.0</ComfyTemperatureMax>
           <ComfyTemperatureMin>-96.0</ComfyTemperatureMin>
           <Flammability>-96.0</Flammability>
+          <MeleeDodgeChance>66</MeleeDodgeChance>
+          <ToxicEnvironmentResistance>0.66</ToxicEnvironmentResistance>
+          <ToxicResistance>0.66</ToxicResistance>
+          <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.66</VEF_RangedDodgeChance>
         </statOffsets>
         <statFactors>
           <AimingDelayFactor>0.165</AimingDelayFactor>
@@ -200,36 +203,30 @@
           <MeleeArmorPenetration>0.165</MeleeArmorPenetration>
           <MeleeCooldownFactor>0.165</MeleeCooldownFactor>
           <MeleeDamageFactor>6.0</MeleeDamageFactor>
-          <MeleeDodgeChance>20.0</MeleeDodgeChance>
-          <MeleeDPS>6.0</MeleeDPS>
+          <!-- <MeleeDPS>1.0</MeleeDPS> -->
           <MeleeHitChance>6.0</MeleeHitChance>
           <MortarMissRadiusFactor>0.165</MortarMissRadiusFactor>
           <PawnTrapSpringChance>0.165</PawnTrapSpringChance>
           <RangedCooldownFactor>0.165</RangedCooldownFactor>
-          <!-- <ShootingAccuracyFactor_Touch>1.0</ShootingAccuracyFactor_Touch>
-          <ShootingAccuracyFactor_Short>1.0</ShootingAccuracyFactor_Short>
-          <ShootingAccuracyFactor_Medium>1.0</ShootingAccuracyFactor_Medium>
-          <ShootingAccuracyFactor_Long>1.0</ShootingAccuracyFactor_Long> -->
           <ShootingAccuracyPawn>8.0</ShootingAccuracyPawn>
           <StaggerDurationFactor>0.165</StaggerDurationFactor>
           <MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">6.0</MeleeDoorDamageFactor>
           <!-- <ShootingAccuracyChildFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</ShootingAccuracyChildFactor> -->
           <AnimalsLearningFactor>2.5</AnimalsLearningFactor>
-          <!-- 在床上时饥饿速度，这里当作 debuff，能力强饿得快没毛病 -->
-          <BedHungerRateFactor>2.5</BedHungerRateFactor>
+          <!-- <BedHungerRateFactor>1.0</BedHungerRateFactor> -->
           <!-- <CaravanRidingSpeedFactor>1.0</CaravanRidingSpeedFactor> -->
+          <CaravanBonusSpeedFactor>6.0</CaravanBonusSpeedFactor>
           <CarryingCapacity>12.0</CarryingCapacity>
-          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">45.0</VEF_MassCarryCapacity>
           <CrawlSpeed>12.0</CrawlSpeed>
           <EatingSpeed>2.5</EatingSpeed>
           <FilthRate>0.165</FilthRate>
-          <FlightCooldown>0.165</FlightCooldown>
-          <MaxFlightTime>6.0</MaxFlightTime>
+          <!-- <FlightCooldown>1.0</FlightCooldown> -->
+          <!-- <MaxFlightTime>1.0</MaxFlightTime> -->
           <ForagedNutritionPerDay>2.5</ForagedNutritionPerDay>
           <GlobalLearningFactor>2.5</GlobalLearningFactor>
           <ImmunityGainSpeed>6.0</ImmunityGainSpeed>
           <InjuryHealingFactor>6.0</InjuryHealingFactor>
-          <JoyFallRateFactor>0.165</JoyFallRateFactor>
+          <JoyFallRateFactor>0.3</JoyFallRateFactor>
           <!-- <LeatherAmount>1.0</LeatherAmount> -->
           <LifespanFactor>2.5</LifespanFactor>
           <!-- 营养需求，增加一点作为 debuff，能力强吃得多没毛病 -->
@@ -243,10 +240,7 @@
           <PsychicEntropyMax>6.0</PsychicEntropyMax>
           <PsychicEntropyRecoveryRate>6.0</PsychicEntropyRecoveryRate>
           <!-- <PsychicSensitivity>1.0</PsychicSensitivity> -->
-          <RestFallRateFactor>0.165</RestFallRateFactor>
           <RestRateMultiplier>2.5</RestRateMultiplier>
-          <ToxicEnvironmentResistance>6.0</ToxicEnvironmentResistance>
-          <ToxicResistance>6.0</ToxicResistance>
           <!-- <Wildness>1.0</Wildness> -->
           <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.165</PsychicEntropyGain>
           <!-- <Terror MayRequire="Ludeon.RimWorld.Ideology">1.0</Terror> -->
@@ -268,7 +262,7 @@
           <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">6.0</MechRemoteShieldEnergy>
           <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">6.0</MechRepairSpeed>
           <!-- <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</RawNutritionFactor> -->
-          <RestFallRateFactor MayRequire="Ludeon.RimWorld.Biotech">0.165</RestFallRateFactor>
+          <RestFallRateFactor MayRequire="Ludeon.RimWorld.Biotech">0.3</RestFallRateFactor>
           <SubcoreEncodingSpeed MayRequire="Ludeon.RimWorld.Biotech">6.0</SubcoreEncodingSpeed>
           <!-- <WastepacksPerRecharge MayRequire="Ludeon.RimWorld.Biotech">1.0</WastepacksPerRecharge> -->
           <FishingSpeed MayRequire="Ludeon.RimWorld.Odyssey">6.0</FishingSpeed>
@@ -340,6 +334,10 @@
           <ActivitySuppressionRate MayRequire="Ludeon.RimWorld.Anomaly">6.0</ActivitySuppressionRate>
           <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">2.5</EntityStudyRate>
           <!-- <StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">1.0</StudyEfficiency> -->
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">45.0</VEF_MassCarryCapacity>
+          <VEF_VerbRangeFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.5</VEF_VerbRangeFactor>
+          <VEF_EnergyShieldEnergyMaxFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">6.0</VEF_EnergyShieldEnergyMaxFactor>
+          <!-- <VEF_FoodCapacityMultiplier MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.0</VEF_FoodCapacityMultiplier> -->
         </statFactors>
       </li>
     </degreeDatas>
@@ -365,6 +363,10 @@
           <ComfyTemperatureMax>192.0</ComfyTemperatureMax>
           <ComfyTemperatureMin>-192.0</ComfyTemperatureMin>
           <Flammability>-192.0</Flammability>
+          <MeleeDodgeChance>99</MeleeDodgeChance>
+          <ToxicEnvironmentResistance>0.99</ToxicEnvironmentResistance>
+          <ToxicResistance>0.99</ToxicResistance>
+          <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.99</VEF_RangedDodgeChance>
         </statOffsets>
         <statFactors>
           <AimingDelayFactor>0.05</AimingDelayFactor>
@@ -372,36 +374,30 @@
           <MeleeArmorPenetration>0.05</MeleeArmorPenetration>
           <MeleeCooldownFactor>0.05</MeleeCooldownFactor>
           <MeleeDamageFactor>18.0</MeleeDamageFactor>
-          <MeleeDodgeChance>60.0</MeleeDodgeChance>
-          <MeleeDPS>18.0</MeleeDPS>
+          <!-- <MeleeDPS>1.0</MeleeDPS> -->
           <MeleeHitChance>18.0</MeleeHitChance>
           <MortarMissRadiusFactor>0.05</MortarMissRadiusFactor>
           <PawnTrapSpringChance>0.05</PawnTrapSpringChance>
           <RangedCooldownFactor>0.05</RangedCooldownFactor>
-          <!-- <ShootingAccuracyFactor_Touch>1.0</ShootingAccuracyFactor_Touch>
-          <ShootingAccuracyFactor_Short>1.0</ShootingAccuracyFactor_Short>
-          <ShootingAccuracyFactor_Medium>1.0</ShootingAccuracyFactor_Medium>
-          <ShootingAccuracyFactor_Long>1.0</ShootingAccuracyFactor_Long> -->
           <ShootingAccuracyPawn>16.0</ShootingAccuracyPawn>
           <StaggerDurationFactor>0.05</StaggerDurationFactor>
           <MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">18.0</MeleeDoorDamageFactor>
           <!-- <ShootingAccuracyChildFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</ShootingAccuracyChildFactor> -->
           <AnimalsLearningFactor>5.0</AnimalsLearningFactor>
-          <!-- 在床上时饥饿速度，这里当作 debuff，能力强饿得快没毛病 -->
-          <BedHungerRateFactor>5.0</BedHungerRateFactor>
+          <!-- <BedHungerRateFactor>1.0</BedHungerRateFactor> -->
           <!-- <CaravanRidingSpeedFactor>1.0</CaravanRidingSpeedFactor> -->
+          <CaravanBonusSpeedFactor>36.0</CaravanBonusSpeedFactor>
           <CarryingCapacity>36.0</CarryingCapacity>
-          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">145.0</VEF_MassCarryCapacity>
           <CrawlSpeed>36.0</CrawlSpeed>
           <EatingSpeed>5.0</EatingSpeed>
           <FilthRate>0.05</FilthRate>
-          <FlightCooldown>0.05</FlightCooldown>
-          <MaxFlightTime>18.0</MaxFlightTime>
+          <!-- <FlightCooldown>1.0</FlightCooldown> -->
+          <!-- <MaxFlightTime>1.0</MaxFlightTime> -->
           <ForagedNutritionPerDay>5.0</ForagedNutritionPerDay>
           <GlobalLearningFactor>5.0</GlobalLearningFactor>
           <ImmunityGainSpeed>18.0</ImmunityGainSpeed>
           <InjuryHealingFactor>18.0</InjuryHealingFactor>
-          <JoyFallRateFactor>0.05</JoyFallRateFactor>
+          <JoyFallRateFactor>0.1</JoyFallRateFactor>
           <!-- <LeatherAmount>1.0</LeatherAmount> -->
           <LifespanFactor>5.0</LifespanFactor>
           <!-- 营养需求，增加一点作为 debuff，能力强吃得多没毛病 -->
@@ -415,10 +411,7 @@
           <PsychicEntropyMax>18.0</PsychicEntropyMax>
           <PsychicEntropyRecoveryRate>18.0</PsychicEntropyRecoveryRate>
           <!-- <PsychicSensitivity>1.0</PsychicSensitivity> -->
-          <RestFallRateFactor>0.05</RestFallRateFactor>
           <RestRateMultiplier>5.0</RestRateMultiplier>
-          <ToxicEnvironmentResistance>18.0</ToxicEnvironmentResistance>
-          <ToxicResistance>18.0</ToxicResistance>
           <!-- <Wildness>1.0</Wildness> -->
           <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicEntropyGain>
           <!-- <Terror MayRequire="Ludeon.RimWorld.Ideology">1.0</Terror> -->
@@ -440,7 +433,7 @@
           <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">18.0</MechRemoteShieldEnergy>
           <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">18.0</MechRepairSpeed>
           <!-- <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">1.0</RawNutritionFactor> -->
-          <RestFallRateFactor MayRequire="Ludeon.RimWorld.Biotech">0.05</RestFallRateFactor>
+          <RestFallRateFactor MayRequire="Ludeon.RimWorld.Biotech">0.1</RestFallRateFactor>
           <SubcoreEncodingSpeed MayRequire="Ludeon.RimWorld.Biotech">18.0</SubcoreEncodingSpeed>
           <!-- <WastepacksPerRecharge MayRequire="Ludeon.RimWorld.Biotech">1.0</WastepacksPerRecharge> -->
           <FishingSpeed MayRequire="Ludeon.RimWorld.Odyssey">18.0</FishingSpeed>
@@ -512,6 +505,10 @@
           <ActivitySuppressionRate MayRequire="Ludeon.RimWorld.Anomaly">18.0</ActivitySuppressionRate>
           <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">5.0</EntityStudyRate>
           <!-- <StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">1.0</StudyEfficiency> -->
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">145.0</VEF_MassCarryCapacity>
+          <VEF_VerbRangeFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">5.0</VEF_VerbRangeFactor>
+          <VEF_EnergyShieldEnergyMaxFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">18.0</VEF_EnergyShieldEnergyMaxFactor>
+          <!-- <VEF_FoodCapacityMultiplier MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.0</VEF_FoodCapacityMultiplier> -->
         </statFactors>
       </li>
     </degreeDatas>
