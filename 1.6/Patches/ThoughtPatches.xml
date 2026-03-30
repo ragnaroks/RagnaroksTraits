@@ -22,11 +22,11 @@
 			</value>
 		</nomatch>
   </Operation>
-
+	
 	<Operation Class="PatchOperationConditional">
-    <xpath>Defs/ThoughtDef[defName="ObservedLayingCorpse"]/nullifyingTraits</xpath>
+    <xpath>Defs/ThoughtDef[defName="SleepDisturbed"]/nullifyingTraits</xpath>
     <match Class="PatchOperationAdd">
-      <xpath>Defs/ThoughtDef[defName="ObservedLayingCorpse"]/nullifyingTraits</xpath>
+      <xpath>Defs/ThoughtDef[defName="SleepDisturbed"]/nullifyingTraits</xpath>
       <value>
 				<li>RagnaroksTraitsTier1</li>
 				<li>RagnaroksTraitsTier2</li>
@@ -34,29 +34,7 @@
 			</value>
     </match>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="ObservedLayingCorpse"]</xpath>
-      <value>
-				<nullifyingTraits>
-					<li>RagnaroksTraitsTier1</li>
-					<li>RagnaroksTraitsTier2</li>
-					<li>RagnaroksTraitsTier3</li>
-				</nullifyingTraits>
-			</value>
-		</nomatch>
-  </Operation>
-
-	<Operation Class="PatchOperationConditional">
-    <xpath>Defs/ThoughtDef[defName="ObservedLayingRottingCorpse"]/nullifyingTraits</xpath>
-    <match Class="PatchOperationAdd">
-      <xpath>Defs/ThoughtDef[defName="ObservedLayingRottingCorpse"]/nullifyingTraits</xpath>
-      <value>
-				<li>RagnaroksTraitsTier1</li>
-				<li>RagnaroksTraitsTier2</li>
-				<li>RagnaroksTraitsTier3</li>
-			</value>
-    </match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="ObservedLayingRottingCorpse"]</xpath>
+			<xpath>Defs/ThoughtDef[defName="SleepDisturbed"]</xpath>
       <value>
 				<nullifyingTraits>
 					<li>RagnaroksTraitsTier1</li>
@@ -89,77 +67,11 @@
 		</nomatch>
   </Operation>
 
-	<Operation Class="PatchOperationConditional">
-    <xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
-    <match Class="PatchOperationAdd">
-      <xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
-      <value>
-				<li>RagnaroksTraitsTier1</li>
-				<li>RagnaroksTraitsTier2</li>
-				<li>RagnaroksTraitsTier3</li>
-			</value>
-    </match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]</xpath>
-      <value>
-				<nullifyingTraits>
-					<li>RagnaroksTraitsTier1</li>
-					<li>RagnaroksTraitsTier2</li>
-					<li>RagnaroksTraitsTier3</li>
-				</nullifyingTraits>
-			</value>
-		</nomatch>
-  </Operation>
-
-	<Operation Class="PatchOperationConditional">
-    <xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]/nullifyingTraits</xpath>
-    <match Class="PatchOperationAdd">
-      <xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]/nullifyingTraits</xpath>
-      <value>
-				<li>RagnaroksTraitsTier1</li>
-				<li>RagnaroksTraitsTier2</li>
-				<li>RagnaroksTraitsTier3</li>
-			</value>
-    </match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]</xpath>
-      <value>
-				<nullifyingTraits>
-					<li>RagnaroksTraitsTier1</li>
-					<li>RagnaroksTraitsTier2</li>
-					<li>RagnaroksTraitsTier3</li>
-				</nullifyingTraits>
-			</value>
-		</nomatch>
-  </Operation>
-	
-	<Operation Class="PatchOperationConditional">
-    <xpath>Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
-    <match Class="PatchOperationAdd">
-      <xpath>Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
-      <value>
-				<li>RagnaroksTraitsTier1</li>
-				<li>RagnaroksTraitsTier2</li>
-				<li>RagnaroksTraitsTier3</li>
-			</value>
-    </match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]</xpath>
-      <value>
-				<nullifyingTraits>
-					<li>RagnaroksTraitsTier1</li>
-					<li>RagnaroksTraitsTier2</li>
-					<li>RagnaroksTraitsTier3</li>
-				</nullifyingTraits>
-			</value>
-		</nomatch>
-  </Operation>
-
 	<!-- Ideology -->
 	<Operation Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
-    <xpath>Defs/ThoughtDef[defName="SoldSlave_Disapproved"]/nullifyingTraits</xpath>
+    <xpath>Defs/ThoughtDef[defName="AteFungus_Despised"]/nullifyingTraits</xpath>
     <match Class="PatchOperationAdd">
-      <xpath>Defs/ThoughtDef[defName="SoldSlave_Disapproved"]/nullifyingTraits</xpath>
+      <xpath>Defs/ThoughtDef[defName="AteFungus_Despised"]/nullifyingTraits</xpath>
       <value>
 				<li>RagnaroksTraitsTier1</li>
 				<li>RagnaroksTraitsTier2</li>
@@ -167,7 +79,7 @@
 			</value>
     </match>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="SoldSlave_Disapproved"]</xpath>
+			<xpath>Defs/ThoughtDef[defName="AteFungus_Despised"]</xpath>
       <value>
 				<nullifyingTraits>
 					<li>RagnaroksTraitsTier1</li>
@@ -179,9 +91,9 @@
   </Operation>
 
 	<Operation Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
-    <xpath>Defs/ThoughtDef[defName="SoldSlave_Horrible"]/nullifyingTraits</xpath>
+    <xpath>Defs/ThoughtDef[defName="AteFungus_Preferred"]/nullifyingTraits</xpath>
     <match Class="PatchOperationAdd">
-      <xpath>Defs/ThoughtDef[defName="SoldSlave_Horrible"]/nullifyingTraits</xpath>
+      <xpath>Defs/ThoughtDef[defName="AteFungus_Preferred"]/nullifyingTraits</xpath>
       <value>
 				<li>RagnaroksTraitsTier1</li>
 				<li>RagnaroksTraitsTier2</li>
@@ -189,7 +101,7 @@
 			</value>
     </match>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="SoldSlave_Horrible"]</xpath>
+			<xpath>Defs/ThoughtDef[defName="AteFungus_Preferred"]</xpath>
       <value>
 				<nullifyingTraits>
 					<li>RagnaroksTraitsTier1</li>
@@ -201,9 +113,9 @@
   </Operation>
 
 	<Operation Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
-    <xpath>Defs/ThoughtDef[defName="SoldSlave_Know_Abhorrent_Mood"]/nullifyingTraits</xpath>
+    <xpath>Defs/ThoughtDef[defName="AteFungusAsIngredient_Despised"]/nullifyingTraits</xpath>
     <match Class="PatchOperationAdd">
-      <xpath>Defs/ThoughtDef[defName="SoldSlave_Know_Abhorrent_Mood"]/nullifyingTraits</xpath>
+      <xpath>Defs/ThoughtDef[defName="AteFungusAsIngredient_Despised"]/nullifyingTraits</xpath>
       <value>
 				<li>RagnaroksTraitsTier1</li>
 				<li>RagnaroksTraitsTier2</li>
@@ -211,7 +123,7 @@
 			</value>
     </match>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="SoldSlave_Know_Abhorrent_Mood"]</xpath>
+			<xpath>Defs/ThoughtDef[defName="AteFungusAsIngredient_Despised"]</xpath>
       <value>
 				<nullifyingTraits>
 					<li>RagnaroksTraitsTier1</li>
@@ -223,9 +135,9 @@
   </Operation>
 
 	<Operation Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
-    <xpath>Defs/ThoughtDef[defName="SoldSlave_Know_Disapproved_Mood"]/nullifyingTraits</xpath>
+    <xpath>Defs/ThoughtDef[defName="AteFungusAsIngredient_Preferred"]/nullifyingTraits</xpath>
     <match Class="PatchOperationAdd">
-      <xpath>Defs/ThoughtDef[defName="SoldSlave_Know_Disapproved_Mood"]/nullifyingTraits</xpath>
+      <xpath>Defs/ThoughtDef[defName="AteFungusAsIngredient_Preferred"]/nullifyingTraits</xpath>
       <value>
 				<li>RagnaroksTraitsTier1</li>
 				<li>RagnaroksTraitsTier2</li>
@@ -233,29 +145,7 @@
 			</value>
     </match>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="SoldSlave_Know_Disapproved_Mood"]</xpath>
-      <value>
-				<nullifyingTraits>
-					<li>RagnaroksTraitsTier1</li>
-					<li>RagnaroksTraitsTier2</li>
-					<li>RagnaroksTraitsTier3</li>
-				</nullifyingTraits>
-			</value>
-		</nomatch>
-  </Operation>
-
-	<Operation Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
-    <xpath>Defs/ThoughtDef[defName="SoldSlave_Know_Horrible_Mood"]/nullifyingTraits</xpath>
-    <match Class="PatchOperationAdd">
-      <xpath>Defs/ThoughtDef[defName="SoldSlave_Know_Horrible_Mood"]/nullifyingTraits</xpath>
-      <value>
-				<li>RagnaroksTraitsTier1</li>
-				<li>RagnaroksTraitsTier2</li>
-				<li>RagnaroksTraitsTier3</li>
-			</value>
-    </match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="SoldSlave_Know_Horrible_Mood"]</xpath>
+			<xpath>Defs/ThoughtDef[defName="AteFungusAsIngredient_Preferred"]</xpath>
       <value>
 				<nullifyingTraits>
 					<li>RagnaroksTraitsTier1</li>

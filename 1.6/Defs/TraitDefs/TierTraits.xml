@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- reference：https://blog.csdn.net/Sea_in_Night/article/details/135216291 -->
+<!-- 所有 def 仍在平衡中 -->
 <Defs>
-  <!-- tier1 -->
+  <!-- tier1，设计目标为所有属性、效率、速度等是原版的 3x -->
   <TraitDef>
     <defName>RagnaroksTraitsTier1</defName>
     <label>`RagnaroksTraitsTier1Label`</label>
     <description>`RagnaroksTraitsTier1Description`</description>
     <commonality>0.00</commonality>
+    <commonalityFemale>0.00</commonalityFemale>
+    <allowOnHostileSpawn>false</allowOnHostileSpawn>
     <conflictingTraits>
       <li>RagnaroksTraitsTier2</li>
       <li>RagnaroksTraitsTier3</li>
@@ -16,6 +19,11 @@
         <label>`RagnaroksTraitsTier1Label`</label>
         <description>`RagnaroksTraitsTier1Description`</description>
         <socialFightChanceFactor>0.25</socialFightChanceFactor>
+        <!-- 使更快饥饿作为 debuff -->
+        <hungerRateFactor>3.0</hungerRateFactor>
+        <theOnlyAllowedMentalBreaks>
+          <li>Binging_Food</li>
+        </theOnlyAllowedMentalBreaks>
         <statOffsets>
           <PawnBeauty>1</PawnBeauty>
           <ComfyTemperatureMax>48.0</ComfyTemperatureMax>
@@ -58,8 +66,7 @@
           <JoyFallRateFactor>0.5</JoyFallRateFactor>
           <!-- <LeatherAmount>1.0</LeatherAmount> -->
           <LifespanFactor>1.25</LifespanFactor>
-          <!-- 营养需求，增加一点作为 debuff，能力强吃得多没毛病 -->
-          <MaxNutrition>1.25</MaxNutrition>
+          <MaxNutrition>10.8</MaxNutrition>
           <!-- <MeatAmount>1.0</MeatAmount> -->
           <MeditationFocusGain>2.0</MeditationFocusGain>
           <MentalBreakThreshold>0.5</MentalBreakThreshold>
@@ -138,7 +145,7 @@
           <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
           <!-- <ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency> -->
           <ButcheryMechanoidSpeed>1.25</ButcheryMechanoidSpeed>
-          <CookSpeed>2.5</CookSpeed>
+          <CookSpeed>3.0</CookSpeed>
           <DrugCookingSpeed>1.25</DrugCookingSpeed>
           <DrugSynthesisSpeed>1.25</DrugSynthesisSpeed>
           <FoodPoisonChance>0.5</FoodPoisonChance>
@@ -172,12 +179,14 @@
     </degreeDatas>
   </TraitDef>
 
-  <!-- tier2 -->
+  <!-- tier2，设计目标为所有属性、效率、速度等是原版的 9x -->
   <TraitDef>
     <defName>RagnaroksTraitsTier2</defName>
     <label>`RagnaroksTraitsTier2Label`</label>
     <description>`RagnaroksTraitsTier2Description`</description>
     <commonality>0.00</commonality>
+    <commonalityFemale>0.00</commonalityFemale>
+    <allowOnHostileSpawn>false</allowOnHostileSpawn>
     <conflictingTraits>
       <li>RagnaroksTraitsTier1</li>
       <li>RagnaroksTraitsTier3</li>
@@ -187,6 +196,11 @@
         <label>`RagnaroksTraitsTier2Label`</label>
         <description>`RagnaroksTraitsTier2Description`</description>
         <socialFightChanceFactor>0.085</socialFightChanceFactor>
+        <!-- 使更快饥饿作为 debuff -->
+        <hungerRateFactor>9.0</hungerRateFactor>
+        <theOnlyAllowedMentalBreaks>
+          <li>Binging_Food</li>
+        </theOnlyAllowedMentalBreaks>
         <statOffsets>
           <PawnBeauty>2</PawnBeauty>
           <ComfyTemperatureMax>96.0</ComfyTemperatureMax>
@@ -229,8 +243,7 @@
           <JoyFallRateFactor>0.3</JoyFallRateFactor>
           <!-- <LeatherAmount>1.0</LeatherAmount> -->
           <LifespanFactor>2.5</LifespanFactor>
-          <!-- 营养需求，增加一点作为 debuff，能力强吃得多没毛病 -->
-          <MaxNutrition>2.5</MaxNutrition>
+          <MaxNutrition>32.4</MaxNutrition>
           <!-- <MeatAmount>1.0</MeatAmount> -->
           <MeditationFocusGain>6.0</MeditationFocusGain>
           <MentalBreakThreshold>0.165</MentalBreakThreshold>
@@ -309,7 +322,7 @@
           <ButcheryFleshSpeed>2.5</ButcheryFleshSpeed>
           <!-- <ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency> -->
           <ButcheryMechanoidSpeed>2.5</ButcheryMechanoidSpeed>
-          <CookSpeed>5.0</CookSpeed>
+          <CookSpeed>9.0</CookSpeed>
           <DrugCookingSpeed>2.5</DrugCookingSpeed>
           <DrugSynthesisSpeed>2.5</DrugSynthesisSpeed>
           <FoodPoisonChance>0.165</FoodPoisonChance>
@@ -343,12 +356,14 @@
     </degreeDatas>
   </TraitDef>
 
-  <!-- tier3 -->
+  <!-- tier3，设计目标为所有属性、效率、速度等是原版的 27x -->
   <TraitDef>
     <defName>RagnaroksTraitsTier3</defName>
     <label>`RagnaroksTraitsTier3Label`</label>
     <description>`RagnaroksTraitsTier3Description`</description>
     <commonality>0.00</commonality>
+    <commonalityFemale>0.00</commonalityFemale>
+    <allowOnHostileSpawn>false</allowOnHostileSpawn>
     <conflictingTraits>
       <li>RagnaroksTraitsTier1</li>
       <li>RagnaroksTraitsTier2</li>
@@ -358,6 +373,11 @@
         <label>`RagnaroksTraitsTier3Label`</label>
         <description>`RagnaroksTraitsTier3Description`</description>
         <socialFightChanceFactor>0.0</socialFightChanceFactor>
+        <!-- 使更快饥饿作为 debuff -->
+        <hungerRateFactor>27.0</hungerRateFactor>
+        <theOnlyAllowedMentalBreaks>
+          <li>Binging_Food</li>
+        </theOnlyAllowedMentalBreaks>
         <statOffsets>
           <PawnBeauty>4</PawnBeauty>
           <ComfyTemperatureMax>192.0</ComfyTemperatureMax>
@@ -400,8 +420,7 @@
           <JoyFallRateFactor>0.1</JoyFallRateFactor>
           <!-- <LeatherAmount>1.0</LeatherAmount> -->
           <LifespanFactor>5.0</LifespanFactor>
-          <!-- 营养需求，增加一点作为 debuff，能力强吃得多没毛病 -->
-          <MaxNutrition>5.0</MaxNutrition>
+          <MaxNutrition>97.2</MaxNutrition>
           <!-- <MeatAmount>1.0</MeatAmount> -->
           <MeditationFocusGain>18.0</MeditationFocusGain>
           <MentalBreakThreshold>0.05</MentalBreakThreshold>
@@ -480,7 +499,7 @@
           <ButcheryFleshSpeed>5.0</ButcheryFleshSpeed>
           <!-- <ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency> -->
           <ButcheryMechanoidSpeed>5.0</ButcheryMechanoidSpeed>
-          <CookSpeed>10.0</CookSpeed>
+          <CookSpeed>27.0</CookSpeed>
           <DrugCookingSpeed>5.0</DrugCookingSpeed>
           <DrugSynthesisSpeed>5.0</DrugSynthesisSpeed>
           <FoodPoisonChance>0.05</FoodPoisonChance>
